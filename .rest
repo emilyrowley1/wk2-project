@@ -1,0 +1,12 @@
+GET https://week-1-9dug.onrender.com/test
+
+###
+GET https://week-1-9dug.onrender.com
+
+###
+Get http://localhost:3000
+
+###
+Get http://localhost:3000/contacts
+###
+Get http://localhost:3000/contacts/644c5f012c3db77a3720a0ca
