@@ -10,3 +10,6 @@ Get http://localhost:3000
 Get http://localhost:3000/contacts
 ###
 Get http://localhost:3000/contacts/644c5f012c3db77a3720a0ca
+
+###
+GET https://wk2-project.onrender.com/contacts
