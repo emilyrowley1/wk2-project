@@ -9,7 +9,35 @@ Get http://localhost:3000
 ###
 Get http://localhost:3000/contacts
 ###
-Get http://localhost:3000/contacts/644c5f012c3db77a3720a0ca
+Get http://localhost:3000/contacts/645a7d49c79b18d4fa8f33c3
 
-###
+### Create contact
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sara",
+    "lastName":"Smith",
+    "email":"ssmith@test.com",
+    "favoriteColor":"blue",
+    "birthday":"08/09/2011"
+}
+
+### PUT contact
+PUT http://localhost:3000/contacts/645a7d49c79b18d4fa8f33c3 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sara",
+    "lastName":"Longman",
+    "email":"ssmith@test.com",
+    "favoriteColor":"blue",
+    "birthday":"08/09/2011"
+}
+### DELETE contact
+DELETE http://localhost:3000/contacts/645a7d49c79b18d4fa8f33c3 HTTP/1.1
+
+
+
+### Production
 GET https://wk2-project.onrender.com/contacts
