@@ -39,5 +39,31 @@ DELETE http://localhost:3000/contacts/645a7d49c79b18d4fa8f33c3 HTTP/1.1
 
 
 
-### Production
+### Production Environment
 GET https://wk2-project.onrender.com/contacts
+
+### Create contact
+POST http://wk2-project.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sara",
+    "lastName":"Smith",
+    "email":"ssmith@test.com",
+    "favoriteColor":"blue",
+    "birthday":"08/09/2011"
+}
+
+### PUT contact
+PUT http://wk2-project.onrender.com/contacts/645a8071490e95bf969f7c04 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sara",
+    "lastName":"Longman",
+    "email":"ssmith@test.com",
+    "favoriteColor":"blue",
+    "birthday":"08/09/2011"
+}
+### DELETE contact
+DELETE http://wk2-project.onrender.com/contacts/645a8071490e95bf969f7c04 HTTP/1.1
