@@ -45,7 +45,6 @@ const createContact = async (req, res, next) => {
 };
 
 const updateContact = async (req, res, next) => {
-  console.log("I got here");
   const userId = new ObjectId(req.params.id);
   const contact = {
     firstName: req.body.firstName,
@@ -77,7 +76,7 @@ const deleteContact = async (req, res, next) => {
     .deleteOne({ _id: userId });
 
     if (result.deletedCount > 0) {
-      res.status(204).send();
+      res.status(200).send();
     } else {
       res.status(500).json(result.error || 'Some error occurred while updating the contact.');
     }
